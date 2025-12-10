@@ -10,9 +10,11 @@ fastify.register(require('@fastify/cookie'), {
 
 const userRoutes = require('./routes/userRoute');
 const todoRoutes = require('./routes/todoRoute');
+const testRoutes = require('./routes/testRoute');
 
 fastify.register(userRoutes, { prefix: '/api/v1/fastify' });
 fastify.register(todoRoutes, { prefix: '/api/v1/fastify' });
+fastify.register(testRoutes, { prefix: '/api/v1/fastify' });
 
 const startServer = async () => {
     try {

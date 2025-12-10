@@ -75,3 +75,5 @@ pids/
 # Fastify specific
 # =========================
 .fastify/
+
+firebase-adminsdk.json
